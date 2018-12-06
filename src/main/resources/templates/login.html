@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Security Example </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/movestar.css}">
+</head>
+<!--Звзды-->
+<body class="stars">
+<!--<audio th:src="@{/music/map.mp3}" autoplay="autoplay" loop>-->
+<!--</audio>-->
+<!--Мерцание звезд-->
+<div class="twinkling">
+<!--<div>-->
+    <div class="container">
+        <!--облака-->
+        <div>
+        <div class="clouds">
+            <!--<div class="row">-->
+                <div class="col-md-12 swim">
+                    <!--space - магия вращения -->
+                    <form id = "test" th:action="@{/}" method="post" class="form-signin space">
+                        <h2 class="form-heading" style="color:rgb(0,76,255)"><span class="fas fa-user-astronaut"
+                                                                                   style="color:rgb(113,18,255)"></span>
+                            Do it</h2>
+                        <div class="form-group">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Вход</button>
+                            <button type="button" class="btn  btn-block btn-primary" data-toggle="modal"><i class="fas fa-space-shuttle"></i> Регистрация
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
